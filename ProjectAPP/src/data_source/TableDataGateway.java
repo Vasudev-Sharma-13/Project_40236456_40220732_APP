@@ -1,9 +1,9 @@
 package data_source;
 
 public interface TableDataGateway {
-
-	public void insert(String tableName);
-	public void select(String tableName);
+	public String tableName="";
+	public void insert();
+	public void select();
 	
 	
 	
