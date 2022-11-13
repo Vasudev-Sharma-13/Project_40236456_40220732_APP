@@ -2,7 +2,7 @@ package data_source;
 
 import java.sql.ResultSet;
 
-public interface TableDataGateway {
+public interface TableDataGateway {  //Interface for TDG
 
 	
 	ResultSet setSQLReturned = null;

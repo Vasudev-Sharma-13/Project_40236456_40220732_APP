@@ -1,3 +1,17 @@
+/**
+ * Class Name:- DataTableSubject (It implements Singleton Design Pattern and Observer Design Pattern (it is an subject))
+ * 
+ * Version information:- 1.8
+ *
+ * Date:- 13/November/2022
+ * 
+ * It acts as an controller 
+ * 
+ *
+ *
+ */
+
+
 package observer_pattern_subject;
 
 import java.util.Scanner;
