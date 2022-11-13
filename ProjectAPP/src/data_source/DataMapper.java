@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import connection.ConnectionToSQL;
 
+
 public class DataMapper implements DataMapperOberserver { // This is the observer in the Observer Design Pattern
 
 	private static DataMapper instanceDataMapper = null;
@@ -31,9 +32,10 @@ public class DataMapper implements DataMapperOberserver { // This is the observe
 	}
 
 	@Override
-	public void update(String newState) {
+	public void update() {
 		System.out.println("Ping recieved from subject(Application Driver)");
 		instanceOfSQLTableDataGateway.setStatementOfSQLDataBase(instanceOfConnectionToSQL.getStatement());
+		String newState=observer_pattern_subject.DataTableSubject.getDataTableSubjectInstance().getNewState();//observer asks for new state 
 		this.resultSetSQLObtained = instanceOfSQLTableDataGateway.selectQuery(newState);
 		
 		if (newState.equals("city") == true) {

@@ -41,7 +41,7 @@ public class SQLTableDataGateway implements TableDataGateway {
 		setTableName(tableName);
 		
 		String selectQuery = "select * from " + this.tableName+"";
-		System.out.println(selectQuery);
+		
 		try {
 			this.resultSetSQLReturned = statementOfSQLDataBase.executeQuery(selectQuery);
 		} catch (SQLException e) {
