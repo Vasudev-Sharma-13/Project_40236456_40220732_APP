@@ -21,7 +21,7 @@ public class ApplicationDriver {
 				inputUser = objectScanner.nextLine();
 
 				if (inputUser.equals("1") == true) {
-					System.out.println("Enter Table Name");
+					System.out.println("Enter Table Name (For example city , country , countrylanguage)");
 					inputTableName = objectScanner.nextLine();
 					objectDataTableSubject.checkTableExists(inputTableName);
 
