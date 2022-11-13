@@ -37,8 +37,8 @@ public class SQLTableDataGateway implements TableDataGateway {
 	}
 
 	@Override
-	public java.sql.ResultSet selectQuery(String columns, String whereClause) {
-		String selectQuery = "select " + columns + " from " + tableName + " " + whereClause;
+	public java.sql.ResultSet selectQuery(String whereClause) {
+		String selectQuery = "select * from " + tableName + " " + whereClause;
 		try {
 			this.resultSetSQLReturned = statementOfSQLDataBase.executeQuery(selectQuery);
 		} catch (SQLException e) {
