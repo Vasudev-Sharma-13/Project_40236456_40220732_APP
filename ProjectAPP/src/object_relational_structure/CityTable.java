@@ -14,7 +14,7 @@
 package object_relational_structure;
 
 public class CityTable {
-
+	private int ID;
 	private char name[] = new char[35];
 	private char countryCode[] = new char[3];
 	private char district[] = new char[20];
@@ -50,6 +50,14 @@ public class CityTable {
 
 	public void setPopulation(int population) {
 		this.population = population;
+	}
+
+	public int getID() {
+		return ID;
+	}
+
+	public void setID(int iD) {
+		ID = iD;
 	}
 
 }

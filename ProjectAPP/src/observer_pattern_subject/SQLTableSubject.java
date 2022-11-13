@@ -5,5 +5,5 @@ public interface SQLTableSubject {
 
 	public void notifyOberver();
 
-	public String getNewState();
+	
 }

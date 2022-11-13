@@ -2,6 +2,6 @@ package data_source;
 
 public interface DataMapperOberserver {
 
-	public void update();
+	public void update(String newState);
 
 }

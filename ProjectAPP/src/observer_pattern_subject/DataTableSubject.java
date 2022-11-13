@@ -37,13 +37,10 @@ public class DataTableSubject implements SQLTableSubject {
 
 	@Override
 	public void notifyOberver() {  // Observer Pattern || Observer ping sent of state change
-		objectDataMapper.update();
+		objectDataMapper.update(this.inputTableName);
 
 	}
 
-	@Override
-	public String getNewState() {
-		return this.inputTableName;
-	}
+
 
 }

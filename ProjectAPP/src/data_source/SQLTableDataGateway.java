@@ -28,7 +28,7 @@ public class SQLTableDataGateway implements TableDataGateway {
 
 	}
 
-	public static SQLTableDataGateway getInstanceSQLTableDataGateway() {  //singleton pattern
+	public static SQLTableDataGateway getInstanceSQLTableDataGateway() { // singleton pattern
 
 		if (instanceSQLTableDataGateway == null) {
 			instanceSQLTableDataGateway = new SQLTableDataGateway();
@@ -37,8 +37,11 @@ public class SQLTableDataGateway implements TableDataGateway {
 	}
 
 	@Override
-	public java.sql.ResultSet selectQuery(String whereClause) {
-		String selectQuery = "select * from " + tableName + " " + whereClause;
+	public java.sql.ResultSet selectQuery(String tableName) { // parameterized query is run
+		setTableName(tableName);
+		
+		String selectQuery = "select * from " + this.tableName+"";
+		System.out.println(selectQuery);
 		try {
 			this.resultSetSQLReturned = statementOfSQLDataBase.executeQuery(selectQuery);
 		} catch (SQLException e) {
