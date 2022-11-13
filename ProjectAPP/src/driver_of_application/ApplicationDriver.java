@@ -11,7 +11,16 @@ public class ApplicationDriver {
 	public static void main(String[] args) {
 	
 		ConnectionToSQL instanceOfConnectionToSQL =  ConnectionToSQL.getInstanceToSQL(); 
-	
+		
+		
+	//	while(true) {
+			
+			
+			//System.out.println("");
+			
+			
+			
+		//}
 		
 		
 		
