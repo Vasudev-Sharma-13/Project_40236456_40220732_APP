@@ -20,7 +20,7 @@ public aspect AspectJLoggerProjectAPP {
 
 	AspectJLoggerProjectAPP() {
 		inputForSequenceTool.add("@startuml");
-		inputForSequenceTool.add("!spacelab");
+		inputForSequenceTool.add("!theme silver");
 		inputForSequenceTool.add("autonumber 01 01 \"<b>[0000]\"");
 		flowOfControl = new Stack<String>();
 		flowOfControl.push(emptyClass);
@@ -70,10 +70,13 @@ public aspect AspectJLoggerProjectAPP {
 
 		String colour = "";
 
-		if (methodExecutionIdentifier == "passwordCheck") {
-			colour = "[#blue]"; // assigning the color red to the password authentication method
-		} else if (methodExecutionIdentifier.startsWith("get") == true) {
-			colour = "[#yellow]"; // assigning the color green to the getters
+		if (methodExecutionIdentifier.startsWith("get") == true) {
+			colour = "[#red]"; // assigning the color red to the password authentication method
+		} else if (methodExecutionIdentifier.startsWith("set") == true) {
+			colour = "[#blue]"; // assigning the color green to the getters
+		}
+		else {
+			colour = "[#green]";
 		}
 
 		if (lastClass.equals(emptyClass)) {

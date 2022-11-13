@@ -7,6 +7,6 @@ public interface TableDataGateway {
 	String tableName = "";
 	ResultSet setSQLReturned = null;
 
-	public void select();
+	public java.sql.ResultSet selectQuery(String columns, String whereClause);
 
 }

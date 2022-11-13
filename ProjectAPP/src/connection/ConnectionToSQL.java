@@ -26,7 +26,7 @@ public class ConnectionToSQL {
 
 	}
 
-	public static ConnectionToSQL getInstanceToSQL() {
+	public static ConnectionToSQL getInstanceConnectionToSQL() {
 
 		if (instanceConnectionToSQL == null) {
 			instanceConnectionToSQL = new ConnectionToSQL();

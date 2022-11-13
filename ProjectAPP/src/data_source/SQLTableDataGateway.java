@@ -11,30 +11,49 @@
 package data_source;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import connection.ConnectionToSQL;
 
 public class SQLTableDataGateway implements TableDataGateway {
 
 	private String tableName;
-	private ResultSet setSQLReturned;
-	private static SQLTableDataGateway instanceSQLTableDataGateway;
+	private ResultSet resultSetSQLReturned;
+	private Statement statementOfSQLDataBase;
 
-	private SQLTableDataGateway() { // singleton
+	private static SQLTableDataGateway instanceSQLTableDataGateway = null;
 
+	private SQLTableDataGateway() { // singleton pattern
+
+	}
+
+	public static SQLTableDataGateway getInstanceSQLTableDataGateway() {  //singleton pattern
+
+		if (instanceSQLTableDataGateway == null) {
+			instanceSQLTableDataGateway = new SQLTableDataGateway();
+		}
+		return instanceSQLTableDataGateway;
 	}
 
 	@Override
-	public void select() {
+	public java.sql.ResultSet selectQuery(String columns, String whereClause) {
+		String selectQuery = "select " + columns + " from " + tableName + " " + whereClause;
+		try {
+			this.resultSetSQLReturned = statementOfSQLDataBase.executeQuery(selectQuery);
+		} catch (SQLException e) {
 
-		 String selectQuery = "select * from " + tableName;
-
-	}
-
-	public void setSetSQLReturned(ResultSet setSQLReturned) {
-		this.setSQLReturned = setSQLReturned;
+			e.printStackTrace();
+		}
+		return this.resultSetSQLReturned;
 	}
 
 	public void setTableName(String tableName) {
 		this.tableName = tableName;
+	}
+
+	public void setStatementOfSQLDataBase(Statement statementOfSQLDataBase) {
+		this.statementOfSQLDataBase = statementOfSQLDataBase;
 	}
 
 }
