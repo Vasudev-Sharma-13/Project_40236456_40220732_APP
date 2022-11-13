@@ -1,10 +1,12 @@
 package data_source;
 
+import java.sql.ResultSet;
+
 public interface TableDataGateway {
-	public String tableName="";
-	public void insert();
+
+	String tableName = "";
+	ResultSet setSQLReturned = null;
+
 	public void select();
-	
-	
-	
+
 }

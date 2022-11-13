@@ -1,5 +1,5 @@
 /**
- * Class Name:- CountryTable
+ * Class Name:- CityTable (Implements Object Relation Mapping to City Table in MYSQL database)
  * 
  * Version information:- 1.3
  *

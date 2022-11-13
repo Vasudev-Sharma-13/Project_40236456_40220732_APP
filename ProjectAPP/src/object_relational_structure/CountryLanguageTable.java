@@ -1,5 +1,5 @@
 /**
- * Class Name:- CountryLanguageTable
+ * Class Name:- CountryLanguageTable (Implements Object Relation Mapping to CountryLanguage Table in MYSQL database)
  * 
  * Version information:- 1.3
  *

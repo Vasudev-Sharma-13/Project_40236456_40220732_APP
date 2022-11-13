@@ -1,3 +1,16 @@
+/**
+ * Class Name:- ConnectionToSQL (Deploys Singleton Design Pattern and creates connection to MYSQL database)
+ * 
+ * Version information:- 1.5
+ *
+ * Date:- 12/November/2022
+ * 
+ * The class is used for creating an connection which is passes to the Data Mapper 
+ *
+ *
+ *
+ */
+
 package connection;
 
 import java.sql.*;
@@ -9,7 +22,7 @@ public class ConnectionToSQL {
 	private static final String PASSWORD = "Forky_123";
 	private static ConnectionToSQL instanceConnectionToSQL = null;
 
-	private ConnectionToSQL() { // Singleton Pattern. One Connection Existing to the database
+	private ConnectionToSQL() { // Singleton Pattern. Only one connection should exist to the MYSQL database.
 
 	}
 
