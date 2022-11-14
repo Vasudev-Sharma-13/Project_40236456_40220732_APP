@@ -54,6 +54,10 @@ public class SQLTableDataGateway implements TableDataGateway {
 	public void setTableName(String tableName) {
 		this.tableName = tableName;
 	}
+	
+	public String getTableName() {
+		return this.tableName;
+	}
 
 	public void setStatementOfSQLDataBase(Statement statementOfSQLDataBase) {
 		this.statementOfSQLDataBase = statementOfSQLDataBase;

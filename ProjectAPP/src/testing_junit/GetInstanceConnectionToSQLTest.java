@@ -11,7 +11,7 @@ import org.junit.Test;
 
 import connection.ConnectionToSQL;
 
-public class GetInstanceConnectionToSQL {
+public class GetInstanceConnectionToSQLTest {
 
 	@Test
 	public void test() {  // Unit testing for ConnectionToSQL class  and function name is instanceOfConnectionToSQL
