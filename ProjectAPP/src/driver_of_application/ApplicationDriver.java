@@ -41,6 +41,7 @@ public class ApplicationDriver {
 				}
 
 				else if (inputUser.equals("2") == true) {
+					System.out.println("Thank you for using our application,Have a nice day!!!");
 					break;
 				} else {
 					System.out.println("Wrong input Please Try again!!!");
