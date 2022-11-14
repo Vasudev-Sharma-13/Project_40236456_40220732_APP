@@ -18,7 +18,7 @@ public class DataTableSubjectTest {
 	DataTableSubject object = DataTableSubject.getDataTableSubjectInstance();
 	
 	@Test
-	public void test() {
+	public void test() {//integration testing for data mapper and datatablesubject
 		object.checkTableExists("city");  
 		assertEquals(object.getNewState().equals("city"), true);	
 	}

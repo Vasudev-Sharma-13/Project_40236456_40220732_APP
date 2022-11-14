@@ -19,13 +19,13 @@ import observer_pattern_subject.*;
 public class ApplicationDriver {
 
 	
-	
+	private static DataTableSubject objectDataTableSubject = DataTableSubject.getDataTableSubjectInstance();;
 	public static void main(String[] args) {
 
 		Scanner objectScanner = new Scanner(System.in);
 		String inputUser;
 		String inputTableName;
-		DataTableSubject objectDataTableSubject = DataTableSubject.getDataTableSubjectInstance();
+		
 		try {
 			while (true) { // infinite loop
 

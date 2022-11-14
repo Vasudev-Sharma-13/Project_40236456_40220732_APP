@@ -15,8 +15,8 @@ public class SQLTableDataGatewayTest {
 	@Test
 	public void test() {
 		SQLTableDataGateway instanceOfSQLTableDataGateway = SQLTableDataGateway.getInstanceSQLTableDataGateway();
-		instanceOfSQLTableDataGateway.setTableName("Hello");
-		assertEquals("Hello", instanceOfSQLTableDataGateway.getTableName());
+		instanceOfSQLTableDataGateway.setTableName("city");
+		assertEquals("city", instanceOfSQLTableDataGateway.getTableName());
 	
 	}
 	

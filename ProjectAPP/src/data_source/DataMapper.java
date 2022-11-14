@@ -27,7 +27,9 @@ public class DataMapper implements DataMapperOberserver { // This is the observe
 			.getInstanceSQLTableDataGateway();
 	private static ConnectionToSQL instanceOfConnectionToSQL = ConnectionToSQL.getInstanceConnectionToSQL();
 	private ResultSet resultSetSQLObtained = null;
-
+	private static ArrayList<object_relational_structure.CityTable> objectRelationalPatternCityTable = new ArrayList<>();
+	private static ArrayList<object_relational_structure.CountryTable> objectRelationalPatternCountryTable = new ArrayList<>();
+	private static ArrayList<object_relational_structure.CountryLanguageTable> objectRelationalPatternCountryLanguageTable = new ArrayList<>();
 	private DataMapper() {  //singleton pattern
 
 	}
@@ -68,7 +70,7 @@ public class DataMapper implements DataMapperOberserver { // This is the observe
 		System.out.println("The contents of the Table are");
 		try {
 
-			ArrayList<object_relational_structure.CityTable> objectRelationalPatternCityTable = new ArrayList<>();
+			
 
 			while (this.resultSetSQLObtained.next()) {
 				objectRelationalPatternCityTable.add(new CityTable());
@@ -101,7 +103,7 @@ public class DataMapper implements DataMapperOberserver { // This is the observe
 		System.out.println("The contents of the Table are");
 		try {
 
-			ArrayList<object_relational_structure.CountryTable> objectRelationalPatternCountryTable = new ArrayList<>();
+			
 			while (this.resultSetSQLObtained.next()) {
 				objectRelationalPatternCountryTable.add(new CountryTable());
 
@@ -147,7 +149,7 @@ public class DataMapper implements DataMapperOberserver { // This is the observe
 		System.out.println("The contents of the Table are");
 		try {
 
-			ArrayList<object_relational_structure.CountryLanguageTable> objectRelationalPatternCountryLanguageTable = new ArrayList<>();
+			
 
 			while (this.resultSetSQLObtained.next()) {
 				objectRelationalPatternCountryLanguageTable.add(new CountryLanguageTable());
