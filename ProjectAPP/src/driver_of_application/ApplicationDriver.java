@@ -18,6 +18,8 @@ import observer_pattern_subject.*;
 
 public class ApplicationDriver {
 
+	
+	
 	public static void main(String[] args) {
 
 		Scanner objectScanner = new Scanner(System.in);

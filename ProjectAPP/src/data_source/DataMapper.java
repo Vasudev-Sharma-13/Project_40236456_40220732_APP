@@ -52,7 +52,7 @@ public class DataMapper implements DataMapperOberserver { // This is the observe
 																												// state
 		this.resultSetSQLObtained = instanceOfSQLTableDataGateway.selectQuery(newState);
 
-		if (newState.equals("city") == true) {
+		if (newState.equals("city") == true) {   //after refactor 
 			mapCity();
 		} else if (newState.equals("country") == true) {
 			mapCountry();
