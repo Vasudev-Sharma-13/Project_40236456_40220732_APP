@@ -28,7 +28,7 @@ public class DataMapper implements DataMapperOberserver { // This is the observe
 	private static ConnectionToSQL instanceOfConnectionToSQL = ConnectionToSQL.getInstanceConnectionToSQL();
 	private ResultSet resultSetSQLObtained = null;
 
-	private DataMapper() {
+	private DataMapper() {  //singleton pattern
 
 	}
 
@@ -43,7 +43,7 @@ public class DataMapper implements DataMapperOberserver { // This is the observe
 
 	@Override
 	public void update() { // subject notifies the observer here
-		System.out.println("Ping recieved from subject(Application Driver)");
+		System.out.println("Ping recieved from subject(Data Table Subject)");
 		instanceOfSQLTableDataGateway.setStatementOfSQLDataBase(instanceOfConnectionToSQL.getStatement());
 		String newState = observer_pattern_subject.DataTableSubject.getDataTableSubjectInstance().getNewState();// observer
 																												// asks

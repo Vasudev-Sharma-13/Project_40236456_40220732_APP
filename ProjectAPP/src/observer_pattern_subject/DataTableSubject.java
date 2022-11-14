@@ -24,7 +24,7 @@ public class DataTableSubject implements SQLTableSubject {
 	private String inputTableName;
 	private static DataTableSubject objectOfDataTableSubject=null;
 	
-	private DataTableSubject() {
+	private DataTableSubject() {  //singleton pattern
 		
 	}
 	
