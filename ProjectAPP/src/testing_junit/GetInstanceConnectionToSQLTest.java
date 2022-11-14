@@ -1,3 +1,11 @@
+/**
+ * 
+ * Integration Testing the ConnectionToSQL class method , multiple method should be true for it to be true
+ * 
+ */
+
+
+
 package testing_junit;
 
 import static org.junit.Assert.*;
@@ -14,7 +22,7 @@ import connection.ConnectionToSQL;
 public class GetInstanceConnectionToSQLTest {
 
 	@Test
-	public void test() {  // Unit testing for ConnectionToSQL class  and function name is instanceOfConnectionToSQL
+	public void test() {  // Integration testing for ConnectionToSQL class  and function name is instanceOfConnectionToSQL
 		
 		
 		 String DATABASE_URL = "jdbc:mysql://localhost/WORLD";

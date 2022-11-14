@@ -1,3 +1,11 @@
+/**
+ * 
+ * Testing the CityTable class functions
+ * 
+ */
+
+
+
 package testing_junit;
 
 import static org.junit.Assert.*;
