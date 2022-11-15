@@ -25,7 +25,7 @@ public class ApplicationDriver {
 		Scanner objectScanner = new Scanner(System.in);
 		String inputUser;
 		String inputTableName;
-		
+		System.out.println("Welcom to the table viewer application");
 		try {
 			while (true) { // infinite loop
 
