@@ -1,1 +1,3 @@
+src/main/resources/static/* linguist-vendored
+documented_code.rb linguist-documentation=true
 *.java linguist-detectable=true
