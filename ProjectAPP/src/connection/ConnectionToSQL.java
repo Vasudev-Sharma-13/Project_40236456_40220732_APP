@@ -19,7 +19,7 @@ public class ConnectionToSQL {
 
 	private static final String DATABASE_URL = "jdbc:mysql://localhost/WORLD";
 	private static final String USERINFO = "root";
-	private static final String PASSWORD = "Forky_123";
+	private static final String PASSWORD = "";
 	private static ConnectionToSQL instanceConnectionToSQL = null;
 
 	private ConnectionToSQL() { // Singleton Pattern. Only one connection should exist to the MYSQL database.

@@ -18,7 +18,6 @@ import observer_pattern_subject.*;
 
 public class ApplicationDriver {
 
-	
 	private static DataTableSubject objectDataTableSubject = DataTableSubject.getDataTableSubjectInstance();;
 	public static void main(String[] args) {
 
